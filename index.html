@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NEXLINX</title>
+<link rel="shortcut icon" type="image/ico" href="public/images/favicon.ico">
+<link href="public/css/reset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="public/css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link href="public/fonts/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<link href="public/css/global.css" rel="stylesheet" type="text/css" media="all" />
+<link href="public/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="public/js/jquery.fancybox.css" media="screen" />
+
+<script type="text/javascript" src="public/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="public/js/slides.min.jquery.js"></script>
+<script type="text/javascript" src="public/js/jquery.fancybox.js"></script>
+<script>
+$(function(){
+	// Set starting slide to 1
+	var startSlide = 1;
+	// Get slide number if it exists
+	if (window.location.hash) {
+		startSlide = window.location.hash.replace('#','');
+	}
+	// Initialize Slides
+	$('#slides').slides({
+		preload: true,
+		preloadImage: '',
+		generatePagination: true,
+		play: 7000,
+		pause: 0,
+		effect: 'fade',
+		crossfade : false,
+		hoverPause: false,
+		// Get the starting slide
+		start: startSlide,
+		animationComplete: function(current){
+			// Set the slide number as a hash
+			//window.location.hash = '#' + current;
+		}
+	});
+});
+</script>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+	<link rel="stylesheet" href="public/css/menu.css" type="text/css" media="screen, projection"/>
+	<!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="public/css/ie.css" media="screen" />
+    <![endif]-->
+<script type="text/javascript" language="javascript" src="public/js/jquery.dropdownPlain.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="container">
+ 	<div id="header">
+   <div class="logo">
+     <a href="static/index.html"><img src="public/images/nexlinx-logo.png" alt="NEXLINX" border="0" /></a>
+   </div>
+   
+   <div class="right_buttons">
+     <div class="top_rheader_links">
+       <ul>
+         <li><a class="current">DATA</a></li>
+         <li><a href="../telenex/index.html">VOICE</a></li>
+       </ul>
+     </div><!--top_rheader_links-->
+     
+   </div>
+   
+   <div class="clearfloat"></div>
+   
+   <div class="navigation">
+       <ul class="dropdown">
+              <li class="first-menu-item"><a href="index.html" class="wh">HOME</a></li>
+              <li><a href="static/aboutus.html" class="wh">ABOUT US</a></li>
+              <li><a href="static/services.html" class="wh">SERVICES</a>
+                    <ul class="sub_menu menu1st">
+                      <li ><a href="static/connectivity.html" >
+                      <img src="public/images/m_conn.png" align="" />
+                      <h1>Connectivity</h1>
+                      <p>Nexlinx provides a wide variety of connectivity options for its clients</p>
+                      </a>
+                      		<ul>
+                             <li><a href="static/internet_services.html">Internet Services</a>
+                             		<ul>
+                                	<li><a href="static/wireless.html">Wireless</a></li>
+                                  <li><a href="static/satellite.html">Satellite</a></li>
+                                  <li><a href="static/fibre.html">Fiber</a></li>
+                                  <li class="last"><a href="static/dsl.html">DSL</a></li>
+                               </ul>
+                            </li>
+                             <li class="last"><a href="static/private_data_services.html">Private Data Services</a>
+                             		<ul>
+                                  <li><a href="routed.html">Routed L3</a></li>
+                                  <li><a href="vlan.html">Private VLAN</a></li> 
+                                  <li class="last"><a href="mpls.html">MPLS</a></li> 
+                               </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li ><a href="static/hosting.html" >
+                    <img src="public/images/m_man.png" align="" />
+                    <h1>Hosting</h1>
+                    <p>Wide variety of managed services ranging from domain hosting to elaborate infrastructure support & maintenance</p>
+                    </a>
+                             		<ul>
+                                	<li><a href="static/hosting.html">Domains</a>
+                                  		<ul>
+                                        <li> <a href="static/domain_registration.html">Domain Registration</a></li>
+                                        <li class="last"> <a href="static/virtual_domain_hosting.html">Virtual Domain Hosting</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="static/hosting.html">Dedicated Servers</a>
+                                  		<ul>
+                                        <li> <a href="static/hosting.html">Windows</a></li>
+                                        <li class="last"> <a href="static/hosting.html">Linux</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a href="static/hosting.html">Virtual Private Servers</a></li>
+                                  <li><a href="static/hosting.html">Colocation</a></li> 
+                                  <li class="last"><a href="static/hosting.html">Cloud Services</a></li>
+                               </ul>
+                            </li>
+                    <li class="last"><a href="static/consulting.html" >
+                    <img src="public/images/m_con.png" align="" />
+                    <h1>Consulting</h1>
+                    <p>Providing a number of consulting services for our clients improve or build completely new networks</p>
+                    </a></li>
+               </ul>
+             </li>
+            <li><a href="static/partners.html" class="wh">PARTNERS</a></li>
+            <li><a href="nexmail/nexmail.html" class="wh">NEXMAIL</a></li>
+            <li><a href="members/members.html" class="wh">MEMBERS</a></li>
+            <li><a href="static/support.html" class="wh">SUPPORT</a></li>
+            <li class="last-menu-item"><a href="static/contactus.html" class="wh">CONTACT US</a></li>
+          </ul><!--dropdown-->
+   </div><!--navigation-->
+  </div><!--header-->
+ <div class="clearfloat"></div>
+ 
+  <div id="banner_container">
+    <div id="home_banner">      
+      <div id="slides">
+        <div class="slides_container">
+          <div class="slide1">
+           <div class="tagline">
+            <h1>Boost your <strong>business</strong></h1>
+            <h2>Whether you need to connect to the world in the middle of the ocean or even in the middle of desert, Nexlinx DVB solutions can provide high quality Satellite access to anywhere in Pakistan.</h2>
+            <div class="learnmore">
+              <a href="static/satellite.html">Learn More</a>
+            </div>
+          </div><!--tagline-->  
+  
+          </div><!-- end slide-->
+          
+          <div class="slide2">
+          <div class="tagline">
+            <h1>High Speed DSL Internet</h1>
+            <h2>Business DSL from Nexlinx provides the affordable business Internet service you need for your business branch office, or home office with the benefit of optimum performance at the best price.</h2>
+            <div class="learnmore">
+              <a href="static/dsl.html">Learn More</a>
+            </div>
+          </div><!--tagline-->  
+          </div><!-- end slide-->
+          
+          <div class="slide3">
+          <div class="tagline">
+            <h1><strong>Connect Wireless</strong></h1>
+            <h2>When your mission critical needs are not satisfied via DSL or Wimax, opt for Nexlinx dedicated Wireless to get a hassle free ,  high quality connectivity to your office or remote locations.</h2>
+            <div class="learnmore">
+              <a href="static/wireless.html">Learn More</a>
+            </div>
+          </div><!--tagline-->  
+          </div><!-- end slide-->
+        
+          
+          <div class="slide4">
+          <div class="tagline">
+            <h1><strong>Fiber Optic</strong></h1>
+            <h2>When you're looking for the best quality of service for your mission critical networking needs, Nexlinx Fiber Optic solutions would not let you down.</h2>
+            <div class="learnmore">
+              <a href="static/fibre.html">Learn More</a>
+            </div>
+          </div><!--tagline-->  
+          </div><!-- end slide-->
+        
+          
+          <div class="slide5">
+          <div class="tagline">
+            <h1><strong>Reliable Hosting</strong></h1>
+            <h2>When you need high quality Domain hosting solutions on a tight budget , Nexlinx provides a wide array of hosting packages on both Windows and Unix platforms. </h2>
+            <div class="learnmore">
+              <a href="static/hosting.html">Learn More</a>
+            </div>
+          </div><!--tagline-->  
+          </div><!-- end slide-->
+                
+        </div><!--slides_container-->
+          <a href="javascript:void(0)" class="prev"> </a>
+          <a href="javascript:void(0)" class="next"> </a>
+        </div>
+      
+      
+    </div><!--home-banner-->
+  </div><!--banner_container-->
+  
+  <div class="clearfloat"></div><!--clearfloat-->
+  
+  <div id="content">
+    <div class="content_left">
+      <h1>Welcome to NEXLINX
+      <div class="print_font">
+        <a href="#" onclick="window.print(); return false;"><img src="public/images/icon_print.png" alt="Print" title="Print" /></a>
+      </div>
+      </h1>
+      <p>Nexlinx specializes in helping small-to-medium sized business grow by providing reliable and secure internet solutions. We work hard to earn our reputation as one of the most trusted names on internet. Nexlinx backs its products with best in-class customer support.</p>
+      <div class="learnmore_red">
+        <a href="static/aboutus.html">Learn More</a>
+      </div>
+      <div class="spacer"></div>
+      
+      <div class="home_req_con">
+        <div class="home_request">
+          <h1>Request a Quotation</h1>
+          <p>
+          Contact us today for a free quotation. 
+          </p>
+          <form>
+            <input name="name" type="text" class="text_fld" id="name" value="Name" size="15" />
+            <input name="email" type="text" class="text_fld" id="email" value="Email Address" size="15" />
+            <div class="frmbutton"><a href="#inline1" class="fancybox" > &nbsp;  </a></div>
+            
+          </form>
+        </div><!--home_request-->
+        
+        <div class="home_contact">
+          <h1 class="red">Get in Touch</h1>
+          <p class="tel">+92 42 111 432 432</p>
+          <p class="eml">
+            <a href="mailto:info@nexlinx.net.pk" target="_blank">info@nexlinx.net.pk</a>
+          </p>
+          <p class="fax">
+          +92 42 35 75 9092
+          </p>
+        </div><!--home_contact-->
+        
+        <div class="clearfloat"></div><!--clearfloat-->
+      </div><!--home_req_con-->
+    </div><!--content_left-->
+  
+    <div class="content_right" style="width:360px;">
+      <div class="home_services">
+       <ul>
+         <li class="ser_con"><a href="static/connectivity.html">
+         <h1>Connectivity</h1>
+         <p>Learn More</p>
+         </a></li>
+         <li class="man_ser"><a href="static/hosting.html">
+         <h1>Hosting</h1>
+         <p>Learn More</p>
+         </a></li>
+         <!--<li class="sol"><a href="static/solutions.html">
+         <h1 style="color:#000 !important;">Solutions</h1>
+         <p>Learn More</p>
+         </a></li>-->
+         <li class="con"><a href="static/consulting.html">
+         <h1>Consulting</h1>
+         <p>Learn More</p>
+         </a></li>
+       </ul>
+      </div><!--home_services-->
+    </div><!--content_right-->
+    
+  </div><!--content-->
+  </div>
+  <div class="clearfloat"></div><!--clearfloat-->
+  
+  <div style=" display:none;">
+      <div id="inline2">
+        <h5>Request Quotation</h5>
+        <div class=" clearfloat"></div>
+         <form class="inquiry_form">
+             <input name="name" type="text" class="text_fld big" id="name"size="40" value="Company Name" />
+             <input name="name" type="text" class="text_fld big" id="name"size="40" value="Contact Person"  />
+             <input name="name" type="text" class="text_fld big no_mr_rt" id="name"size="40" value="Email"  />
+             <div class="clearfloat"></div>
+             
+             <input name="name" type="text" class="text_fld big" id="name"size="40" value="Phone No"  />
+             <input name="name" type="text" class="text_fld big" id="name"size="40" value="Cell Phone"  />
+             <input name="name" type="text" class="text_fld big no_mr_rt" id="name"size="40" value="Address"  />
+           <div class="clearfloat"></div>
+             <textarea class="text_fld area" style="">Description</textarea>           
+             
+            <br />
+             <div class="clearfloat"></div>
+             <input name="Submit" type="submit" class="inquiry_bt" value="Submit" />
+          </form>
+          
+          <div class="clearfloat"></div>
+          <span>Thank you for choosing Nexlinx , our marketing representative has been forwarded your request and shall be getting in touch with you in the next 48 hours. </span>
+        </div> 
+      </div>  
+  <div id="footer_sticky">
+  <div id="footer_container">
+    <div class="footer">
+      <div class="footer_copyright">
+        <p>
+        Copyright 2012 Nexlinx, All Rights Reserved 
+        </p>
+        <p>Designed & Developed by Fxture Media</p>
+      </div><!--footer_copyright-->
+      
+      <div class="footer_links">
+        <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="static/aboutus.html">ABOUT US</a></li> 
+         <li><a href="static/services.html">SERVICES</a></li> 
+         <li><a href="static/partners.html">PARTNERS</a></li>
+         <li><a href="nexmail/nexmail.html">NEXMAIL</a></li> 
+         <li><a href="members/members.html">MEMBERS</a></li> 
+         <li><a href="static/support.html">SUPPORT</a></li> 
+         <li><a href="static/contactus.html">CONTACT US</a></li>
+       </ul>
+      </div><!--footer_links-->
+    </div><!--footer-->
+    
+  </div><!--footer_container-->
+  </div><!--footer_container-->
+</div><!--container-->
+</body>
+</html>
